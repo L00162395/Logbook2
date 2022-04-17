@@ -17,6 +17,11 @@ plugins{
 
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(16))
+    }
+}
 
 repositories{
     //Uses Maven repository to get the libs
@@ -30,9 +35,19 @@ dependencies{
 
     //The dependency also uses the google guava library
     implementation("com.google.guava:guava:30.0-jre")
+
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.13.2.2")
 }
 
 application{
+    //Define the main class for the application
+    mainClass.set("UserTest.Java")
+}
+
+tasks.test{
+    //Use TestNG for unit tests
+    useTestNG()
+}
     //Define the main class for the application
     mainClass.set("UserTest.Java")
 }
