@@ -48,8 +48,3 @@ tasks.test{
     //Use TestNG for unit tests
     useTestNG()
 }
-
-tasks.test{
-    //Use TestNG for unit tests
-    useTestNG()
-}
