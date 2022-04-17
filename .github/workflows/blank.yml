@@ -29,4 +29,4 @@ jobs:
 
       # Run our build usig Gradle
       - name: Build with gradle
-        run: ./gradlew build
+        run: ./gradlew build -x test
