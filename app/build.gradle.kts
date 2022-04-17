@@ -48,9 +48,6 @@ tasks.test{
     //Use TestNG for unit tests
     useTestNG()
 }
-    //Define the main class for the application
-    mainClass.set("UserTest.Java")
-}
 
 tasks.test{
     //Use TestNG for unit tests
