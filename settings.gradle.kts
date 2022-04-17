@@ -17,7 +17,7 @@ println("In the settings,gradle.kts file - Determine which project take part in 
 include("app")
 
 plugins {
-  id("com.gradle.enterprise") version("3.9)
+  id("com.gradle.enterprise") version("3.9")
   }
   
 gradleEnterprise {
