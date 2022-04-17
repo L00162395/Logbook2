@@ -12,4 +12,4 @@ rootProject.name = "Gradle Demo"
 
 println("In the settings.gradle.kts file - This is executable during initialisation phase")
 println("In the settings,gradle.kts file - Determine which project take part in the build")
-include('app')
+include("app")
