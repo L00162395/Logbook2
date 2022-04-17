@@ -33,6 +33,6 @@ jobs:
         
       #Create Build scan
       - name: Do build scan
-        run: ./gradlew build --scan
+        run: ./gradlew build -x test --scan
         
         
