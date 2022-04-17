@@ -26,7 +26,13 @@ jobs:
       # Make gradle executable
       - name: Make gradle executable
         run: chmod +x ./gradlew
-
+        
       # Run our build usig Gradle
       - name: Build with gradle
         run: ./gradlew build -x test
+        
+      #Create Build scan
+      - name: Do build scan
+        run: ./gradle build --scan
+        
+        
