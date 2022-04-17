@@ -23,6 +23,10 @@ java {
     }
 }
 
+java {
+       withJavadocJar()
+}
+
 repositories{
     //Uses Maven repository to get the libs
     mavenCentral()
